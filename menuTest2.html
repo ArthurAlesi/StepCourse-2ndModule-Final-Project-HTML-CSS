@@ -19,7 +19,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            
+
         }
 
 
@@ -30,22 +30,22 @@
             width: 100%;
         }
 
-        label.logo{
+        label.logo {
             color: #fff;
             font-size: 35px;
             line-height: 80px;
-            padding: 0 100px ;
+            padding: 0 100px;
 
         }
 
         nav ul {
             /* retirar esse background-color */
-            background-color: darkgreen;
+            /* background-color: darkgreen; */
             float: right;
             margin-right: 0;
         }
 
-        nav ul li{
+        nav ul li {
             display: inline-block;
             /* line-height: 80px; */
             /* padding: 1px; */
@@ -61,21 +61,93 @@
             text-transform: uppercase;
         }
 
-        a.active, a:hover{
+        a.active,
+        a:hover {
             background-color: #1d075f;
             transition: .5s;
         }
 
-        .checkbtn{
+        .checkbtn {
             font-size: 30px;
             color: #fff;
             float: right;
             line-height: 80px;
             margin-right: 40px;
             cursor: pointer;
-            
+            display: none;
+
         }
 
+        #check {
+            /* display: none; */
+        }
+
+        @media(max-width:1080px) {
+            nav ul li a {
+                color: white;
+                font-size: 13px;
+                padding: 6px 9px;
+                text-transform: uppercase;
+                /* background: red; */
+            }
+        }
+
+
+
+
+
+
+
+
+
+        @media(max-width: 965px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+
+            nav ul li a {
+                font: 16px;
+            }
+        }
+
+        @media(max-width: 858px) {
+            .checkbtn {
+                display: block;
+            }
+
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background-color: #1d075f;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:active,
+            a:hover {
+                background: none;
+                color: #5434af;
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+
+        }
     </style>
 </head>
 
@@ -83,7 +155,7 @@
 
     <nav>
         <input type="checkbox" id="check">
-        <label for="" class="checkbtn">
+        <label for="check" class="checkbtn">
             <i>&#9776;</i>
         </label>
 
@@ -91,22 +163,29 @@
         <ul>
 
             <li><a href="#">Início</a></li>
-            <li><a href="#">Cardapio</a></li>
+            <li><a href="#">Cardapio</a>
+                <!-- <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Design</a></li>
+                 </ul> -->
+
+            </li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#">Sobre</a></li>
+            <!-- <li><a href="#">Sobre</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Login</a></li> -->
         </ul>
     </nav>
     <section>
         <h1>Conteúdo</h1>
     </section>
 
-    <ul>
+    <!-- <ul>
         <li>oi</li>
         <li>oi</li>
         <li>oi</li>
-    </ul>
+    </ul> -->
 
 </body>
 
