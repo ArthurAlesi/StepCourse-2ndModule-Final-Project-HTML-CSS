@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #logo {
+            float: left;
+            font-size: 35px;
+            color: #fff;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 30px;
+        }
+
+        #logo a {
+            color: white;
+        }
+
+
+        #bg_hlwn {
+            width: 100%;
+        }
+
+        nav {
+            background-color: #5434af;
+            height: 80px;
+            width: 80%;
+            margin: auto;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            background-color: turquoise;
+            position: relative;
+        }
+
+        nav ul li {
+            float: right;
+            width: 100px;
+            text-align: center;
+
+        }
+
+        nav ul li a {
+            /* padding: 15px; */
+            display: block;
+            height: 80px;
+            /* TODO tirar esse backgorund */
+            background: green;
+            box-sizing: border-box;
+            line-height: 80px;
+        }
+
+        nav ul ul {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        nav ul li:hover ul {
+            visibility: visible;
+        }
+
+        nav ul ul li {
+            float: none;
+        }
+
+        nav ul li a:hover {
+            cursor: pointer;
+            background: yellow;
+        }
+
+
+        #check {
+            float: left;
+            display: none;
+
+        }
+
+        #hamburguer {
+            padding: 15px;
+            /* TODO retirar background color */
+            background-color: red;
+            box-sizing: border-box;
+            /* TODO tirar */
+            text-align: center;
+            font-size: 30px;
+            display: none;
+            height: 80px;
+            float: right;
+
+        }
+
+        @media(max-width: 1400px) {
+            nav {
+                width: 85%;
+            }
+        }
+
+
+        @media(max-width: 1100px) {
+            nav {
+                width: 90%;
+            }
+        }
+
+
+
+        @media(max-width: 955px) {
+            nav ul {
+                display: none;
+            }
+
+            #hamburguer {
+                display: block;
+            }
+        }
+
+
+
+        @media(max-width: 510px) {
+            nav {
+                width: 95%;
+                height: 70px;
+            }
+
+            #logo {
+                font-size: 30px;
+                height: 70px;
+
+            }
+
+            #hamburguer {
+                height: 70px;
+            }
+
+        }
+
+        @media(max-width: 350px) {
+            #logo {
+                display: none;
+
+            }
+
+            nav{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img id="bg_hlwn" src="./images/background/wall.png" alt="">
+
+    <nav>
+
+        <label for="" id="logo" for="home">
+            <a href="www.google.com">Restaurant's</a>
+        </label>
+        <input type="checkbox" id="check">
+        <label for="check" id="hamburguer">
+            &#9776;
+        </label>
+
+        <ul>
+            <li><a href="#">login</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cardápio</a>
+
+                <ul>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="#">Bebida</a></li>
+                    <li><a href="#">Sobremesa</a></li>
+                </ul>
+
+            </li>
+            <li><a href="www.google.com" id="home">Home</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia nam
+        laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, corporis saepe dolorem beatae, officia
+        nam laboriosam dolor tenetur deleniti dolores sit voluptatum fugiat unde, aperiam veniam vitae nemo quibusdam
+        numquam!
+
+    </div>
+
+</body>
+
+</html>

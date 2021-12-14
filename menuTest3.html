@@ -15,9 +15,9 @@
 
 
         .menu {
-            width: 100%;
-            height: 50px;
             background-color: #222;
+            height: 50px;
+            width: 100%;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -28,7 +28,9 @@
 
         .menu ul li {
             width: 150px;
-            float: left;
+            /* float: left; */
+            float: right;
+
         }
 
         .menu a {
@@ -40,13 +42,13 @@
             color: #fff;
         }
 
-        .menu ul ul{
+        .menu ul ul {
             position: absolute;
             visibility: hidden;
         }
 
 
-        .menu ul li:hover ul{
+        .menu ul li:hover ul {
             visibility: visible;
         }
 
@@ -60,29 +62,81 @@
             border-bottom: solid 1px #ccc;
         }
 
-        .menu ul ul li a{
+        .menu ul ul li a {
             background: #069;
         }
 
-        label[for="bt_menu"]{
+        label[for="bt_menu"] {
             padding: 5px;
             background: #222;
             color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             font-size: 30px;
             cursor: pointer;
+            width: 50px;
+            height: 50px;
 
         }
+
+
+        #bt_menu {
+            display: none;
+        }
+
+        label[for="bt_menu"] {
+            display: none;
+        }
+
+
+        @media(max-width: 800px) {
+
+            label[for="bt_menu"] {
+                display: block;
+            }
+
+
+            #bt_menu:checked ~ .menu {
+                margin-left: 0;
+            }
+
+            .menu{
+                margin-top: 5px;
+                margin-left: -100%;
+                transition: all .4s;
+            }
+
+            .menu ul li {
+                width: 100%;
+                float: none;
+            }
+
+            .menu ul ul {
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all .4s;
+
+            }
+
+            .menu ul li:hover ul {
+                height: auto;
+                max-height: 200px;
+            }
+        }
+
+
+
+
         /* ============================================================ */
         /* ============================================================ */
         /* ============================================================ */
 
-        .divTeste{
+        .divTeste {
             background: chocolate;
             width: 300px;
             height: 300px;
         }
-
     </style>
 
 </head>
