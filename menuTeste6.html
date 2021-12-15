@@ -27,7 +27,7 @@
 
         .menu ul {
             list-style: none;
-            position: relative;
+            /* position: relative; */
         }
 
         .menu ul li {
@@ -108,15 +108,20 @@
 
         @media(max-width: 1000px) {
 
-            .logo {
+            /* .logo {
                 position: absolute;
                 margin-right: 0;
                 /* height: 80px;
                 box-sizing: border-box;
                 color: white; */
                 /* line-height: 60px; */
-                right: 0;
+                /* right: 0; */
+                /* display: none; */
                 /* top: 0; */
+            } 
+
+            .logo{
+                display: none;
             }
 
 
@@ -143,29 +148,7 @@
                 box-sizing: border-box;
             }
 
-
-            #bt_menu:checked~.menu {
-                margin-left: 5%;
-                width: 90%;
-            }
-
-            .menu {
-                margin-top: 0px;
-                margin-left: -100%;
-                transition: all .4s;
-            }
-
-            .menu ul li {
                 width: 100%;
-                float: none;
-            }
-
-            .menu ul ul {
-                position: static;
-                overflow: hidden;
-                max-height: 0;
-                transition: all .4s;
-
             }
 
             .menu ul li:hover ul {
@@ -192,6 +175,7 @@
         }
 
         .logo { 
+
             margin-left: 0;
             position: absolute;
             height: 80px;
@@ -216,6 +200,11 @@
                 width: 100%;
                 transition: all .4s;
             }
+
+
+
+
+
         }
     </style>
 
