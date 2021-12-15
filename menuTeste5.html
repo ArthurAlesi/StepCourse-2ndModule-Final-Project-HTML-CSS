@@ -8,32 +8,16 @@
     <title>Document</title>
     <style>
         * {
-            margin: 0;
             padding: 0;
+            margin: 0;
             text-decoration: none;
             list-style: none;
             box-sizing: border-box;
             font-style: normal;
+        }
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
-            
-        }
-
-        #logo {
-            float: left;
-            font-size: 35px;
-            color: #fff;
-            font-size: 35px;
-            line-height: 80px;
-            padding: 0 30px;
-        }
-
-        #logo a {
-            color: white;
-        }
-
-
-        #bg_hlwn {
-            width: 100%;
         }
 
         nav {
@@ -47,237 +31,187 @@
             top: 0;
         }
 
-        nav ul {
-            background-color: turquoise;
-            position: relative;
-            /* float: right; */
-            /* margin-right: 0; */
+        label#logo {
+            color: #fff;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 80px;
         }
+
+        label#logo a {
+            color: white;
+        }
+
+        nav ul {
+            /* retirar esse background-color */
+            background-color: darkgreen;
+            float: right;
+            margin-right: 0;
+        }
+
+
 
         nav ul li {
-            float: right;
-            width: 100px;
-            text-align: center;
-
+            display: inline-block;
+            height: 80px;
+            margin: 0;
+            /* line-height: 80px; */
+            /* display: inline-block; */
+            /* margin: 0 5px; */
+            line-height: 80px;
+            /* height: 80px;
+            background-color: brown;
+            box-sizing: border-box; */
         }
+
+
+
 
         nav ul li a {
-            /* padding: 15px; */
-            display: block;
+            /* color: #fff; */
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+            display: inline-block;
             height: 80px;
-            /* TODO tirar esse backgorund */
-            background: green;
-            box-sizing: border-box;
+            /* line-height: 80px; */
+            text-align: center;
+            /* vertical-align: top; */
+            /* display: inline-block;
+            width: 100px;
+            height: 80px;
             line-height: 80px;
+            background-color: chartreuse;
+            text-align: center; */
+            /* padding: 7px 20px; */
         }
 
-        nav ul ul {
-            position: absolute;
-            visibility: hidden;
-        }
-
-        nav ul li:hover ul {
-            visibility: visible;
-        }
-
-        nav ul ul li {
-            float: none;
-        }
-
-        nav ul li a:hover {
-            cursor: pointer;
-            background: yellow;
-        }
-
-
-        #check {
-            float: left;
-            display: none;
-
+        a.active,
+        a:hover {
+            background-color: #1d075f;
+            transition: .5s;
         }
 
         #hamburguer {
-            padding: 15px;
-            /* TODO retirar background color */
-            background-color: red;
-            box-sizing: border-box;
-            /* TODO tirar */
-            text-align: center;
             font-size: 30px;
+            color: #fff;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
             display: none;
-            height: 80px;
-            float: left;
-
         }
 
-        @media(max-width: 1400px) {
+        #check {
+            display: none;
+        }
 
+        @media(max-width:1580px) {
             nav {
                 width: 85%;
             }
         }
 
-
-        @media(max-width: 1100px) {
+        @media(max-width:1480px) {
             nav {
                 width: 90%;
             }
+
+            nav ul li a {
+                color: white;
+                font-size: 13px;
+                padding: 6px 9px;
+                text-transform: uppercase;
+            }
         }
 
-
-
-        @media(max-width: 955px) {
-
-            #logo {
-                float: right;
-            }
-
-
-
-            ul {
-                top: 80px;
-                position: fixed;
-                width: 100%;
-                /* height: 100vh; */
-                left: -100%;
-                text-align: center;
-                transition: all .5s;
-
-            }
-
-            ul ul {
-                transition: none;
-            }
-
-
-            ul ul {
-                max-height: 0;
-                position: static;
-                overflow: hidden;
-            }
-
-            nav ul li {
-                float: none;
-                display: block;
-                /* display: flex; */
-                /* flex-direction: column-reverse; */
-                width: 100%;
-                text-align: center;
+        @media(max-width:1180px) {
+            nav {
+                width: 95%;
             }
 
             nav ul li a {
-                /* width: 100%; */
+                color: white;
+                font-size: 12px;
+                padding: 6px 5px;
+                text-transform: uppercase;
+            }
+
+            label#logo {
+                color: #fff;
+                font-size: 30px;
+                line-height: 80px;
+                padding: 0 60px;
+            }
+        }
+
+        @media(max-width: 910px) {
+            #hamburguer {
+                display: block;
+            }
+
+
+            ul {
+                /* height: 0px; */
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                /* position: fixed; */
+                /* display: block; */
+                /* position: absolute; */
+                width: 100%;
+                left: -100%;
+                /* TODO CHANGE TO -100  */
+                transform: translate(-100%, 0);
                 text-align: center;
+                transition: all .5s;
+                /* height: 100vh; */
+            }
+
+            ul ul {
+                /* position: relative; */
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+                line-height: 30px;
+            }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+            a:active,
+            a:hover {
+                background: none;
+                background-color: blueviolet;
+                color: #5434af;
+            }
+
+
+            nav ul ul {
+                display: block;
+            }
+
+            nav ul #dropdown:hover ul {
+                display: block;
+                opacity: 0.3;
             }
 
             #check:checked~ul {
                 left: 0;
+                transform: translate(0%, 0);
+            }
+
+            #check:checked~ul ul {
+                /* left: 0; */
+                transform: translate(0%, 0);
+
             }
 
 
-            nav ul li:hover ul {
-                float: none;
-                display: block;
-                position: static;
-                width: 100%;
-                left: 0;
-                transition: all .3s;
-                max-height: 160px;
-            }
-
-            /* nav{
-                display: block;
-            } */
-
-            /*  ---------------------------------------------------------   */
-            /* nav{ */
-            /* margin-right: -75%; */
-            /* position: static;
-            } */
-
-            /* nav ul { */
-            /* margin-right: -60%; */
-            /* } */
-
-            /* nav ul li { */
-            /* float: none; */
-            /* width: 100%; */
-            /* } */
-
-            /* nav{
-                display: block;
-                margin-left: -100%;
-                transition: all .4s;
-            } */
-            /* nav ul {
-                display: none;
-            } */
-            /* nav ul li{
-                float: none;
-            } */
-            /*  ------------------------  */
-            /* 
-            nav{
-                display: block;
-                margin-left: -100%;
-                transition: all .4s;
-            } */
-
-            /* nav ul li {
-                display: block;
-                float: none;
-                position: static;
-                width: 100vh;
-            }
-
-            nav ul li a {
-                width: 100%;
-                text-align: center;
-            } */
-
-            /* nav ul li{
-                float: none;
-            } */
-
-            #hamburguer {
-                display: block;
-                position: static;
-            }
-        }
-
-
-
-        @media(max-width: 510px) {
-            nav {
-                width: 95%;
-                height: 70px;
-            }
-
-            #logo {
-                font-size: 30px;
-                height: 70px;
-
-            }
-
-            #hamburguer {
-                height: 70px;
-            }
-
-        }
-
-        @media(max-width: 350px) {
-            #logo {
-                display: none;
-
-            }
-
-            nav {
-                width: 100%;
-            }
-        }
-
-        #nao {
-            display: none;
         }
     </style>
 </head>
@@ -299,12 +233,12 @@
 
         <ul>
             <!-- <li><a href="#">login</a></li> -->
-            <li><a href="#" id="nao">none</a></li>
+            <!-- <li><a href="#" id="nao">none</a></li> -->
             <li><a href="#">login</a></li>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Blog</a></li>
-            <li  ><a href="#">Cardápio</a>
+            <li id="dropdown"><a href="#">Cardápio</a>
 
                 <ul>
                     <li><a href="#">Comida</a></li>
@@ -313,7 +247,7 @@
                 </ul>
 
             </li>
-            <li><a href="www.google.com" id="home">Home</a></li>
+            <li id="home"><a href="www.google.com">Home</a></li>
         </ul>
     </nav>
 
