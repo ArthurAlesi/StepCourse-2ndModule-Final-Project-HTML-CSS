@@ -103,14 +103,14 @@ footer {
     /* background-color: antiquewhite; */
     /* display: inline-block; */
     font-family: Arial, Helvetica, sans-serif;
-    height: 76px;
+    height: 67px;
     box-sizing: border-box;
 }
 
 .flex_container .col3 ul li a {
     /* background-color: antiquewhite; */
     /* display: inline-block; */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     /* color: ; */
