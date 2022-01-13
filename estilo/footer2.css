@@ -37,6 +37,7 @@ footer {
 
 .col3 {
     /* background-color: rgb(72, 99, 33); */
+    /* text-align: right; */
 }
 
 
@@ -116,10 +117,29 @@ footer {
     /* color: ; */
 
 }
+@media(max-width:1180px){
+
+    footer{
+        width: 90%;
+        transition: all .4s;
+    }
+} 
+
 
 @media(max-width:600px) {
     .flex_container {
         flex-direction: column;
+        /* height: 100px; */
+    }
+
+    footer {
+        width: 100%;
+        height: 1200px;
+        transition: all .4s;
+    }
+
+    .footer_col {
+        flex: 10%;
     }
 }
 

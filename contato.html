@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
-
     <link rel="stylesheet" href="estilo/slideshow.css">
     <link rel="stylesheet" href="estilo/jumbotron.css">
     <link rel="stylesheet" href="estilo/blog_index.css">
     <link rel="stylesheet" href="estilo/footer2.css">
     <link rel="stylesheet" href="estilo/menu.css">
+    <link rel="stylesheet" href="estilo/contato.css">
 
 </head>
 
 <body>
+
+
     <section class="wall_hlwn">
 
         <!-- <img id="bg_hlwn" src="./images/background/wall.png" alt=""> -->
@@ -53,116 +53,73 @@
                 <!-- <li class="vertical"><a href="" class="">LoginX</a></li> -->
 
                 <!-- <li class="horizontal"><a href="#">Login</a></li> -->
-                <li class="horizontal"><a href="contato.html">Contato</a></li>
-                <li class="horizontal"><a href="#">Sobre</a></li>
+                <li class="horizontal"><a href="#">Contato</a></li>
+                <li class="horizontal"><a href="sobre.html">Sobre</a></li>
                 <li class="horizontal"><a href="#">Blog</a></li>
                 <li class="horizontal"><a href="#">Cardápio</a>
                     <ul>
                         <li><a href="" class="dropdown">Comida</a></li>
                         <li><a href="" class="dropdown">Bebida</a></li>
                         <li><a href="" class="dropdown">Sobremesa</a></li>
-
                     </ul>
                 </li>
                 <li class="horizontal"><a href="">Home</a></li>
-
-
-
 
             </ul>
         </nav>
     </section>
 
-    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 
+        ============================================================================================================================================================
+     -->
 
 <br><br>
-<br>
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="images/slide/img_nature_wide.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
-        </div>
+    <div class="contact_container">
+        <form action="" class= "form-contact">
+            <br>
+            <div class="container-contact-title">
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="images/slide/img_snow_wide.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
+                <span class="contact-title">Contact</span> us
+            </div>
+            <br>
+            <span class="sub-title-contact">
+                Mande uma mensagem para nós!
 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="images/slide/img_mountains_wide.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
+            </span>
+            <br>
+            <input type="text" placeholder="email@email.com">
+            <br>
+            <input type="text" placeholder="assunto">
+            <br>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div class="dot_container" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-
-
-
-    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
-    <br><br>
-    <br>
-
-
-    <section class="jumbotron_index">
-        <h1 class="jumbo_title">Restaurant's</h1>
-        <h2 class="jumbo_subtitle">Subtitle</h2>
-        <br>
-        <hr>
-        <br>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non praesentium neque quasi harum perferendis eum
-            rerum placeat, odit ea reiciendis voluptatibus <br> repellat totam incidunt maxime autem iusto nulla, quas
-            error!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam provident possimus <br> natus, hic nemo
-            officiis
-            aliquid voluptas similique dolorem deleniti enim, unde laboriosam atque? Quos odio reiciendis eaque sint
-            incidunt.</p>
-        <br>
-        <br>
-        <a href="#" class="btn_jumbo">Leia mais</a>
-    </section>
-
-
-
-    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-
-
-
-
-
-
-    <div class="blog_index">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod esse doloremque nemo corporis. Cum alias eos nemo in totam, autem facere corrupti aut, iure error dicta soluta illum maiores at?
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <br>
+        </form>
+        <button class="button-contact">Send your message</button>
 
     </div>
 
 
 
-    <br>
-    <br>
 
 
+
+
+
+
+    <!-- 
+        ============================================================================================================================================================
+     -->
+
+<br><br>
+<br><br>
+<hr class="hr-contact">
+<br><br>
+<br><br>
     <footer>
 
         <div class="flex_container">
@@ -190,12 +147,12 @@
                 <span for="" class="foot-title">Opening Hours</span>
                 <ul>
                     <br>
-                    
-                    <li>
-                        
 
-                            <span> MONDAY :</span> Closed
-                        
+                    <li>
+
+
+                        <span> MONDAY :</span> Closed
+
                     </li>
                     <li><span> TUESDAY :</span> Closed</li>
                     <li><span> WED - FRI :</span> ............................ 10 am - 9 pm</li>
@@ -232,7 +189,6 @@
 
 
 
-    <script src="javascript/slideshow.js"></script>
 </body>
 
 </html>
