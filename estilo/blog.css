@@ -72,13 +72,13 @@ h1 {
     margin-left: 40px;
     font-size: 26px;
     font-weight: bold;
-    color:#e67d06;
+    color: #e67d06;
 
 }
 
 .blog-article-content p {
     /* background: cadetblue; */
-    height: 150px;
+    height: 115px;
     overflow: hidden;
     text-align: justify;
     box-sizing: border-box;
@@ -106,6 +106,86 @@ h1 {
     font-size: 18px;
     margin-left: 40px;
     color: rgb(104, 104, 104);
-      font-style: italic;
+    font-style: italic;
 
+}
+
+
+
+
+
+
+
+.nav-blog-articles {
+
+    height: 50px;
+    width: 600px;
+    /* background-color: green; */
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    /* position: absolute; */
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 140px;
+    text-align: center;
+    
+    /* padding: 20px; */
+}
+
+.nav-blog-articles ul {
+    position: relative;
+    margin: auto;
+    
+}
+
+.nav-blog-articles ul li {
+    /* background-color: greenyellow; */
+
+    display: inline-block;
+
+}
+
+
+.nav-blog-articles ul li a {
+    text-decoration: none;
+    font-size: 26px;
+    /* height: 24px; */
+    /* height: 30px ; */
+    padding: 7px 6px;
+    color: rgb(46, 46, 46);
+
+    display: inline-block;
+
+
+
+}
+
+.nav-blog-articles ul li a:hover {
+    border-radius: 8px;
+    background-color: rgb(107, 107, 107);
+    color: rgb(245, 245, 245);
+}
+
+
+
+.nav-blog-articles ul li a[active] {
+    background-color: rgb(46, 46, 46);
+    border-radius: 8px;
+    color: rgb(245, 245, 245);
+}
+
+.nav-blog-articles ul li .next-page{
+    font-size: 40px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+.nav-blog-articles ul li .prev-page{
+    line-height: 40px;
+    font-size: 40px;
+    margin-right: 30px;
+    /* background-color: turquoise; */
+}
+
+.nav-blog-articles ul li span{
+    font-size: 19px;
 }
