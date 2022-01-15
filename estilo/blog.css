@@ -14,10 +14,47 @@ h1 {
     margin: auto;
 }
 
+.link-sections {
+    /* background-color: blueviolet; */
+    margin: auto;
+    text-align: center;
+}
+
+
+.section-blog {
+    display: inline-block;
+    border: 1px solid #222;
+    padding: 9px 20px;
+    font-size: 16px;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #222;
+    margin: 0 8px;
+
+}
+
+.section-blog[active] {
+    border: 1px solid #222;
+    color: white;
+    background-color: #222;
+}
+
+.section-blog:hover{
+    color: white;
+    background-color: rgb(112, 112, 112);
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.section-blog[active]:hover {
+
+    background-color: #222;
+}
+
+
 .blog-container h1 {
     font-size: 42px;
     /* background-color: sandybrown; */
-    color: purple;
+    color: rgb(112, 30, 149);
     text-transform: uppercase;
 }
 
@@ -25,11 +62,12 @@ h1 {
     /* padding: 20px; */
     box-sizing: border-box;
     /* padding: 5%; */
-    width: 80%;
+    width: 85%;
     /* background-color: chocolate; */
     margin: auto;
-
 }
+
+
 
 .link-article-post {
     text-decoration: none;
@@ -43,7 +81,7 @@ h1 {
     flex-direction: row;
     /* color: #F6921D; */
     border-bottom: 2px solid #ffca8d;
-    padding: 30px 60px;
+    padding: 30px 90px;
 }
 
 .blog-img-container {
@@ -128,14 +166,14 @@ h1 {
     margin-top: 70px;
     margin-bottom: 140px;
     text-align: center;
-    
+
     /* padding: 20px; */
 }
 
 .nav-blog-articles ul {
     position: relative;
     margin: auto;
-    
+
 }
 
 .nav-blog-articles ul li {
@@ -162,8 +200,8 @@ h1 {
 
 .nav-blog-articles ul li a:hover {
     border-radius: 8px;
-    background-color: rgb(107, 107, 107);
-    color: rgb(245, 245, 245);
+    background-color: rgb(46, 46, 46);
+    color: rgb(251, 251, 251);
 }
 
 
@@ -174,18 +212,19 @@ h1 {
     color: rgb(245, 245, 245);
 }
 
-.nav-blog-articles ul li .next-page{
+.nav-blog-articles ul li .next-page {
     font-size: 40px;
     margin-left: 20px;
     line-height: 40px;
 }
-.nav-blog-articles ul li .prev-page{
+
+.nav-blog-articles ul li .prev-page {
     line-height: 40px;
     font-size: 40px;
     margin-right: 30px;
     /* background-color: turquoise; */
 }
 
-.nav-blog-articles ul li span{
+.nav-blog-articles ul li span {
     font-size: 19px;
 }
