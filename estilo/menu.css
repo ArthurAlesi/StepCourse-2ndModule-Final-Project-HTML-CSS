@@ -242,7 +242,7 @@ label[for="bt_menu"] {
 }
 
 .logo {
-
+    background-color: #222;
     margin-left: 0;
     position: absolute;
     height: 80px;
