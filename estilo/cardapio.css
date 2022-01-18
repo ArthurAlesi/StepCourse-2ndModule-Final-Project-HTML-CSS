@@ -1,0 +1,128 @@
+.cardapio-container {
+
+    width: 70%;
+    margin: auto;
+}
+
+.dish {
+    /* margin-bottom: 10px; */
+    /* background-color: lawngreen; */
+    /* background-color: #222; */
+}
+
+.tab-container {
+
+    /* background-color: rgb(117, 117, 117);  */
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.tab-container .tab-item {
+    display: inline-block;
+    /* background-color: rgb(121, 121, 121); */
+    height: 60px;
+    width: 120px;
+    line-height: 60px;
+    background-color: #222;
+    color: white;
+    border: none;
+
+}
+
+.tab-container .tab-active {
+    background-color: white;
+    color: #222;
+    border-left: 1px solid #222 ;
+    border-right: 1px solid #222 ;
+    font-weight: bold;
+    font-size: 17px;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+.cardapio-content {
+    width: 85%;
+    margin: auto;
+    /* background-color: hotpink; */
+}
+
+.cardapio-content .food {}
+
+
+
+
+.cardapio-content article {
+    margin: 10px 0;
+    border-bottom: 1px solid red;
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.cardapio-img-container {
+    width: 200px;
+    height: 180px;
+    background-color: blue;
+    /* display: inline-block; */
+
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.cardapio-article-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content-col1 {
+    width: 80%;
+    /* background-color: indigo; */
+    height: 180px;
+}
+
+.content-col2 {
+    /* background-color: khaki; */
+    width: 20%;
+    height: 180px;
+    text-align: center;
+}
+
+.food .cardapio-article-title {
+    color: #ec4c2f;
+
+}
+
+.cardapio-article-title {
+    margin-left: 40px;
+    font-size: 26px;
+    /* background-color: lavenderblush; */
+    font-weight: bold;
+}
+
+.cardapio-article-content p {
+    height: auto;
+    overflow: hidden;
+    text-align: justify;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: 'roboto';
+    line-height: 120%;
+    width: 90%;
+}
+
+
+.price {
+    line-height: 180px;
+    text-align: center;
+
+}
