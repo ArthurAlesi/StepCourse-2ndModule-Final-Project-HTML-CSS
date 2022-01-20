@@ -154,6 +154,7 @@
 @media(max-width: 1180px) {
 
     .cardapio-container {
+        transition: all .4s;
         width: 90%;
     }
 
@@ -163,7 +164,8 @@
 @media(max-width: 520px) {
 
     .cardapio-container {
-        width: 90%;
+        width: 100%;
+        transition: all .4s;
     }
 
 }
