@@ -15,6 +15,27 @@
     <link rel="stylesheet" href="estilo/menu.css">
     <link rel="stylesheet" href="estilo/cardapio.css">
 
+    <script>
+
+        function chooseTab(index){
+            let tabs = document.getElementsByClassName("tab-item")
+            let tabActive = document.getElementsByClassName('tab-active')
+            tabActive[0].classList.remove('tab-active')
+            // tab[index].classList.remove('dish-active');
+
+            tabs[index].classList.add('tab-active');;
+
+
+        }
+
+        function chooseDish(){
+            let dishes = document.getElementsByClassName("dish")
+            let dishActive = document.getElementsByClassName('tab-active')
+            dish-active
+        }
+        
+    </script>
+
 </head>
 
 <body>
@@ -76,13 +97,11 @@
 
     <div class="cardapio-container">
         <div class="tab-container">
-            <button class="tab-item " >Comidas</button>
-            <button class="tab-item tab-active" >Bebida</button>
-            <button class="tab-item">Sobremesa</butt>
+            <button class="tab-item  tab-active" onclick="chooseTab(0)">Comidas</button><button class="tab-item"  onclick="chooseTab(1)">Bebida</button><button class="tab-item"  onclick="chooseTab(2)">Sobremesa</butt>
         </div>
 
         <div class="cardapio-content">
-            <div class="dish food">
+            <div class="dish food dish-active">
                 <h1>food</h1>
                 <article id="article-1">
                     <div class="cardapio-img-container">
@@ -284,8 +303,8 @@
                 </article>
 
             </div>
-            <br><br>
-            <div class="dish drink">
+            
+            <div class="dish drink  ">
                 <h1>Drink</h1>
                 <article id="article-1">
                     <div class="cardapio-img-container">

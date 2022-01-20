@@ -1,5 +1,5 @@
 .cardapio-container {
-
+background-color: green;
     width: 70%;
     margin: auto;
 }
@@ -10,6 +10,11 @@
     /* background-color: #222; */
 }
 
+.dish:not(.dish-active){
+    display: none;
+}
+
+
 .tab-container {
 
     /* background-color: rgb(117, 117, 117);  */
@@ -18,15 +23,27 @@
     margin: auto;
 }
 
+.tab-container  .tab-item:hover:not(.tab-active) {
+
+    /* background-color: rgb(117, 117, 117);  */
+ background-color: gray;
+ border-left: 1px solid gray ;
+ border-right: 1px solid gray ;
+ 
+}
+
+
+
 .tab-container .tab-item {
     display: inline-block;
     /* background-color: rgb(121, 121, 121); */
-    height: 60px;
+    height: 50px;
     width: 120px;
-    line-height: 60px;
+    line-height: 45px;
     background-color: #222;
     color: white;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -36,8 +53,10 @@
     border-left: 1px solid #222 ;
     border-right: 1px solid #222 ;
     font-weight: bold;
-    font-size: 17px;
-    box-sizing: border-box;
+    /* line-height: 16px; */
+    /* font-size: 16px; */
+    /* line-height: px; */
+    /* box-sizing: border-box; */
     
 }
 
@@ -124,5 +143,14 @@
 .price {
     line-height: 180px;
     text-align: center;
+    font-size: 24px;
+
+}
+
+/*    =============================================================    */
+/*    =============================================================    */
+/*    =============================================================    */
+
+@media(max-width: 1080px){
 
 }
