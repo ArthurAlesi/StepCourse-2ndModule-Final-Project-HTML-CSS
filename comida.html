@@ -15,26 +15,7 @@
     <link rel="stylesheet" href="estilo/menu.css">
     <link rel="stylesheet" href="estilo/cardapio.css">
 
-    <script>
-
-        function chooseTab(index){
-            let tabs = document.getElementsByClassName("tab-item")
-            let tabActive = document.getElementsByClassName('tab-active')
-            tabActive[0].classList.remove('tab-active')
-            // tab[index].classList.remove('dish-active');
-
-            tabs[index].classList.add('tab-active');;
-
-
-        }
-
-        function chooseDish(){
-            let dishes = document.getElementsByClassName("dish")
-            let dishActive = document.getElementsByClassName('tab-active')
-            dish-active
-        }
-        
-    </script>
+  
 
 </head>
 
@@ -61,9 +42,9 @@
                 <li class="vertical"><a href="home.html" id="home">HomeX</a></li>
                 <li class="vertical"><a href="">CardapioX</a>
                     <ul>
-                        <li><a href="comida.html" class="dropdown">Comida</a></li>
-                        <li><a href="bebida.html" class="dropdown">Bebida</a></li>
-                        <li><a href="sobremesa.html" class="dropdown">Sobremesa</a></li>
+                        <li><a href="comida.html?choise=0" class="dropdown">Comida</a></li>
+                        <li><a href="comida.html?choise=1" class="dropdown">Bebida</a></li>
+                        <li><a href="comida.html?choise=2" class="dropdown">Sobremesa</a></li>
 
                     </ul>
 
@@ -79,9 +60,9 @@
                 <li class="horizontal"><a href="blog.html">Blog</a></li>
                 <li class="horizontal"><a href="cardapio.html">Cardápio</a>
                     <ul>
-                        <li><a href="comida.html" class="dropdown">Comida</a></li>
-                        <li><a href="bebida.html" class="dropdown">Bebida</a></li>
-                        <li><a href="sobremesa.html" class="dropdown">Sobremesa</a></li>
+                        <li><a href="comida.html?choise=0" class="dropdown">Comida</a></li>
+                        <li><a href="comida.html?choise=1" class="dropdown">Bebida</a></li>
+                        <li><a href="comida.html?choise=2" class="dropdown">Sobremesa</a></li>
 
                     </ul>
                 </li>
@@ -97,12 +78,12 @@
 
     <div class="cardapio-container">
         <div class="tab-container">
-            <button class="tab-item  tab-active" onclick="chooseTab(0)">Comidas</button><button class="tab-item"  onclick="chooseTab(1)">Bebida</button><button class="tab-item"  onclick="chooseTab(2)">Sobremesa</butt>
+            <button class="tab-item  tab-active" onclick="showChoise(0)">Comidas</button><button class="tab-item"  onclick="showChoise(1)">Bebida</button><button class="tab-item"  onclick="showChoise(2)">Sobremesa</butt>
         </div>
 
         <div class="cardapio-content">
             <div class="dish food dish-active">
-                <h1>food</h1>
+                <h1>FOOD</h1>
                 <article id="article-1">
                     <div class="cardapio-img-container">
                         <img src="" alt="">
@@ -506,7 +487,7 @@
                 </article>
 
             </div>
-            <br><br>
+            <!-- <br><br> -->
             <div class="dish dessert">
                 <h1>Dessert</h1>
                 <article id="article-1">
@@ -783,6 +764,44 @@
     </footer>
     <div class="rodape">Copyright 2022 © Restaurants.com</div>
 
+
+
+    <script>
+
+        function chooseTab(index){
+            let tabs = document.getElementsByClassName("tab-item")
+            let tabActive = document.getElementsByClassName('tab-active')
+            tabActive[0].classList.remove('tab-active')
+            // tab[index].classList.remove('dish-active');
+
+            tabs[index].classList.add('tab-active');;
+
+
+        }
+
+        function chooseDish(index){
+            let dishes = document.getElementsByClassName("dish")
+            let dishActive = document.getElementsByClassName('dish-active')
+            dishActive[0].classList.remove('dish-active')
+
+            dishes[index].classList.add('dish-active');;
+            // dish-active
+        }
+
+
+        function showChoise(index){
+            chooseTab(index)
+            chooseDish(index)
+        }
+
+        let url = window.location.search;
+        let urlParams = new URLSearchParams(url); 
+        // choise = parseInt(choise.slice(-1))
+        choise = page_type = parseInt(urlParams.get('choise'))
+
+        showChoise(choise)
+        
+    </script>
 
 
 </body>
