@@ -14,8 +14,11 @@
     /* height: auto; */
     background-repeat: no-repeat;
     background-size: contain;
-    /*  */
+    /* height 544 é o height correto utilizado */
     /* height: 544px; */
+    /* max-height: 544px; */
+    width: 100%;
+    aspect-ratio: 1913 / 547;
     /* height: 200px; */
     vertical-align: top;
     /*  mudar se nao resolver */
