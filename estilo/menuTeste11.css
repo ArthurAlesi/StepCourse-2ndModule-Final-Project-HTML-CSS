@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    background-image: url(../images/background/wall.png);
+    /* height: 400px; */
+    width: 100%;
+    background-color: green;
+    aspect-ratio: 1913 / 547;
+    /* aspect-ratio: 2 / 1; */
+    background-size: contain;
+}

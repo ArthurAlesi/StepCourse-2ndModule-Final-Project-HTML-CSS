@@ -1,0 +1,278 @@
+.cardapio-container {
+    /* background-color: green; */
+    width: 70%;
+    margin: auto;
+    /* height: 500px; */
+}
+
+.dish {
+    /* margin-bottom: 10px; */
+    /* background-color: lawngreen; */
+    /* background-color: #222; */
+}
+
+
+
+.dish:not(.dish-active) {
+    display: none;
+}
+
+
+.tab-container {
+
+    /* background-color: rgb(117, 117, 117); */
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.tab-container .tab-item:hover:not(.tab-active) {
+
+    background-color: rgb(117, 117, 117); 
+    /* background-color: gray; */
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+
+}
+
+
+
+.tab-container .tab-item {
+    display: inline-block;
+    /* background-color: rgb(121, 121, 121); */
+    height: 50px;
+    width: 120px;
+    line-height: 45px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.tab-container .tab-active {
+    background-color: white;
+    color: #222;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+    font-weight: bold;
+    /* line-height: 16px; */
+    /* font-size: 16px; */
+    /* line-height: px; */
+    /* box-sizing: border-box; */
+
+}
+
+
+
+
+.cardapio-content {
+    width: 85%;
+    /* height: 600px; */
+    margin: auto;
+    /* background-color: hotpink; */
+}
+
+.cardapio-content .food {}
+
+
+
+
+.cardapio-content article {
+    margin: 10px 0;
+    border-bottom: 1px solid red;
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: row;
+    /* height: 600px; */
+
+
+}
+
+.cardapio-img-container {
+    width: 200px;
+    height: 180px;
+    background-color: blue;
+    /* display: inline-block; */
+
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.cardapio-article-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.content-col1 {
+    width: 80%;
+    /* background-color: indigo; */
+    height: 180px;
+}
+
+.content-col2 {
+    /* background-color: khaki; */
+    width: 20%;
+    height: 180px;
+    text-align: center;
+    /* background-color: chartreuse; */
+}
+
+.food .cardapio-article-title,  .food h1 {
+    color: #ec4c2f;
+
+
+}
+
+.drink .cardapio-article-title, .drink h1 {
+    color: purple;
+
+}
+
+
+
+
+.dessert .cardapio-article-title, .dessert h1 {
+    color: #7a4f23;
+
+}
+.cardapio-article-title {
+    margin-left: 40px;
+    font-size: 26px;
+    /* background-color: lavenderblush; */
+    font-weight: bold;
+}
+
+.cardapio-article-content p {
+    height: auto;
+    overflow: hidden;
+    text-align: justify;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: 'roboto';
+    line-height: 120%;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+
+
+.price {
+    line-height: 180px;
+    text-align: center;
+    font-size: 24px;
+    /* background-color: cadetblue; */
+
+}
+
+/*    =============================================================    */
+/*    =============================================================    */
+/*    =============================================================    */
+@media(max-width: 1430px) {
+    .cardapio-article-content p {
+        font-size: 16px;
+        line-height: 105%;
+
+    }
+}
+
+
+@media(max-width: 1180px) {
+
+    .cardapio-container {
+        transition: all .4s;
+        width: 90%;
+    }
+
+}
+
+@media(max-width: 1180px) {
+    .cardapio-article-title {
+        font-size: 22px;
+    }
+
+    .cardapio-content article {
+        padding: 15px 50px;
+        transition: all .4s;
+
+    }
+}
+
+@media(max-width: 830px) {
+    .cardapio-content article {
+        padding: 15px 0px;
+        transition: all .4s;
+
+    }
+}
+
+@media(max-width: 740px) {
+    .cardapio-content {
+        padding: 15px 0px;
+        transition: all .4s;
+
+    }
+
+    .cardapio-container {
+        width: 100%;
+        transition: all .4s;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width:630px) {
+    .cardapio-content article {
+        height: auto;
+    }
+
+    .cardapio-article-content {
+        flex-direction: column;
+    }
+
+    .content-col1 {
+        width: 80%;
+        height: 240px;
+    }
+
+    .content-col2 {
+        height: 30px;
+        /* line-height: 30px; */
+    }
+
+    .price{
+        line-height: 30px;
+        margin-left: 40px;
+    }
+
+
+    .cardapio-article-title {
+        font-size: 22px;
+    }
+
+}
+
+
+@media(max-width: 520px) {
+
+    .cardapio-container {
+        width: 100%;
+        transition: all .4s;
+    }
+
+    .cardapio-content {
+        padding: 0px;
+        /* width: 100%; */
+    }
+
+    .cardapio-article-title {
+        font-size: 18px;
+    }
+
+}
