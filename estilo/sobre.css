@@ -39,7 +39,8 @@
     line-height: 1.9;
     text-align: justify;
     font-family:  'Roboto', sans-serif;
-    color: white;
+    /* color: white; */
+    color: #222222;
 }
 
 .sobre-title{
