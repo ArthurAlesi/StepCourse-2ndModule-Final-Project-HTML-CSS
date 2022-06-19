@@ -61,6 +61,7 @@
 .menu ul {
     list-style: none;
     position: relative;
+    z-index: 1;
 }
 
 .menu ul li {
@@ -157,6 +158,7 @@ label[for="bt_menu"] {
         /* left: none;
     transform: none; */
         opacity: 1;
+        
     }
 
     .menu a {
