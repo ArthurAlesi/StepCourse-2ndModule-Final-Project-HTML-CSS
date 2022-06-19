@@ -25,6 +25,7 @@ footer {
 
 .footer_col {
     flex: 33.3333%;
+    padding: 10px;
 }
 
 .col1 {
