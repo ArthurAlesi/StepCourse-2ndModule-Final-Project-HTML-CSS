@@ -54,6 +54,8 @@
     bottom: 0;
     /* position: absolute; */
     position: absolute;
+    /*  ADICIONADO DEPOIS -- IMPORTANTISSIMO */
+    z-index: 1;
     /* position: relative; */
 
 }
@@ -68,6 +70,7 @@
     width: 150px;
     /* float: left; */
     float: right;
+    
 
 }
 
@@ -81,16 +84,21 @@
     background-color: #222;
     color: #fff;
     line-height: 80px;
+    
 }
 
 .menu ul ul {
     position: absolute;
     visibility: hidden;
+    
+    
 }
 
 
 .menu ul li:hover ul {
     visibility: visible;
+    
+    
 }
 
 /* .menu ul li:<when clicked> ul {
