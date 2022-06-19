@@ -1,1 +1,811 @@
-ola mundo
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="estilo/slideshow.css">
+    <link rel="stylesheet" href="estilo/jumbotron.css">
+    <link rel="stylesheet" href="estilo/blog_index.css">
+    <link rel="stylesheet" href="estilo/footer2.css">
+    <link rel="stylesheet" href="estilo/menu.css">
+    <link rel="stylesheet" href="estilo/cardapio.css">
+
+  
+
+</head>
+
+<body>
+    <section class="wall_hlwn">
+
+        <!-- <img id="bg_hlwn" src="./images/background/wall.png" alt=""> -->
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">
+            &#9776;
+
+            <!-- <label class="logo">
+                Restaurant's
+            </label> -->
+        </label>
+        <nav class="menu">
+
+            <label class="logo">
+                Restaurant's
+            </label>
+
+            <!-- <label for="">teste</label> -->
+            <ul>
+                <li class="vertical"><a href="home.html" id="home">HomeX</a></li>
+                <li class="vertical"><a href="">CardapioX</a>
+                    <ul>
+                        <li><a href="comida.html?choise=0" class="dropdown">Comida</a></li>
+                        <li><a href="comida.html?choise=1" class="dropdown">Bebida</a></li>
+                        <li><a href="comida.html?choise=2" class="dropdown">Sobremesa</a></li>
+
+                    </ul>
+
+                </li>
+                <li class="vertical"><a href="blog.html">BlogX</a></li>
+                <li class="vertical"><a href="sobre.html">SobreX</a></li>
+                <li class="vertical"><a href="contato.html">ContatoX</a></li>
+                <!-- <li class="vertical"><a href="" class="">LoginX</a></li> -->
+
+                <!-- <li class="horizontal"><a href="#">Login</a></li> -->
+                <li class="horizontal"><a href="contato.html">Contato</a></li>
+                <li class="horizontal"><a href="sobre.html">Sobre</a></li>
+                <li class="horizontal"><a href="blog.html">Blog</a></li>
+                <li class="horizontal"><a href="cardapio.html">Cardápio</a>
+                    <ul>
+                        <li><a href="comida.html?choise=0" class="dropdown">Comida</a></li>
+                        <li><a href="comida.html?choise=1" class="dropdown">Bebida</a></li>
+                        <li><a href="comida.html?choise=2" class="dropdown">Sobremesa</a></li>
+
+                    </ul>
+                </li>
+                <li class="horizontal"><a href="home.html">Home</a></li>
+
+
+
+
+            </ul>
+        </nav>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <div class="cardapio-container">
+        <div class="tab-container">
+            <button class="tab-item  tab-active" onclick="showChoise(0)">Comidas</button><button class="tab-item"  onclick="showChoise(1)">Bebida</button><button class="tab-item"  onclick="showChoise(2)">Sobremesa</butt>
+        </div>
+
+        <div class="cardapio-content">
+            <div class="dish food dish-active">
+                <h1>FOOD</h1>
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="dish drink  ">
+                <h1>Drink</h1>
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <!-- <br><br> -->
+            <div class="dish dessert">
+                <h1>Dessert</h1>
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article id="article-1">
+                    <div class="cardapio-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cardapio-article-content">
+                        <div class="content-col1">
+                            <span class="cardapio-article-title">Nome do Prato</span>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores possimus
+                                perferendis
+                                quas
+                                repudiandae, quidem dignissimos illo quisquam. Necessitatibus voluptate suscipit aut
+                                deleniti
+                                ratione excepturi corrupti temporibus fuga inventore numquam? Dicta?
+                            </p>
+                        </div>
+                        <div class="content-col2">
+                            <span class="price">R$XX,XX</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer>
+
+        <div class="flex_container">
+            <div class="footer_col col1">
+                <span for="" class="foot-title">CONTACTS</span>
+                <ul>
+                    <li>
+                        <br>
+                        <span>(º) Telefone</span>
+                        <p>+55 (21)9 9876-5432</p>
+                    </li>
+                    <li>
+                        <br>
+                        <span>(º) Email</span>
+                        <p>restaraunts@mail.com</p>
+                    </li>
+                    <li>
+                        <br>
+                        <span>(º) Adress</span>
+                        <p>1234 Av. Street Food Brazil </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col col2">
+                <span for="" class="foot-title">Opening Hours</span>
+                <ul>
+                    <br>
+
+                    <li>
+
+
+                        <span> MONDAY :</span> Closed
+
+                    </li>
+                    <li><span> TUESDAY :</span> Closed</li>
+                    <li><span> WED - FRI :</span> ............................ 10 am - 9 pm</li>
+                    <li><span> SATURDAY :</span> .......................... 10 am - 10 pm</li>
+                    <li><span> SUNDAY :</span> .............................. 10 am - 8 pm</li>
+
+
+                </ul>
+
+
+
+            </div>
+            <div class="footer_col col3">
+                <span for="" class="foot-title">Social Media</span>
+                <br>
+                <ul>
+                    <li>(icon) <a href=""> Facebook</a></li>
+                    <li>(icon) <a href="">Twitter</a> </li>
+                    <li>(icon) <a href="">Instagram</a> </li>
+                    <li>(icon) <a href="">Pinterest</a> </li>
+                    <li>(icon) <a href="">WhatsApp</a> </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+    <div class="rodape">Copyright 2022 © Restaurants.com</div>
+
+
+
+    <script>
+
+        function chooseTab(index){
+            let tabs = document.getElementsByClassName("tab-item")
+            let tabActive = document.getElementsByClassName('tab-active')
+            tabActive[0].classList.remove('tab-active')
+            // tab[index].classList.remove('dish-active');
+
+            tabs[index].classList.add('tab-active');;
+
+
+        }
+
+        function chooseDish(index){
+            let dishes = document.getElementsByClassName("dish")
+            let dishActive = document.getElementsByClassName('dish-active')
+            dishActive[0].classList.remove('dish-active')
+
+            dishes[index].classList.add('dish-active');;
+            // dish-active
+        }
+
+
+        function showChoise(index){
+            chooseTab(index)
+            chooseDish(index)
+        }
+
+        let url = window.location.search;
+        let urlParams = new URLSearchParams(url); 
+        // choise = parseInt(choise.slice(-1))
+        choise = page_type = parseInt(urlParams.get('choise'))
+
+        showChoise(choise)
+        
+    </script>
+
+
+</body>
+
+
+
+</html>
